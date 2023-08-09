@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+    from {
+      transform: translateY(0); /* For horizontal scrolling, use translateY for vertical scrolling */
+    }
+    to {
+      transform: translateY(-100%); /* For horizontal scrolling, use translateY for vertical scrolling */
+    }
+  }
+  
+  /* Add the desired animation properties */
+  .animate-scroll {
+    display: flex;
+    flex-direction: column;
+    animation: scroll 30s linear infinite; /* Adjust the duration (10s in this case) as per your preference */
+  }
